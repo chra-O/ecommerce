@@ -1,0 +1,169 @@
+import React from "react";
+import { Image } from "react-bootstrap";
+import Card from "./Cardcom";
+
+import NavbarCom from "./NavbarCom";
+
+export default function Home() {
+  return (
+    <>
+      <NavbarCom />
+      <div id="howOrder">
+        <div id="container">
+          <div class="product-details">
+            <h1>MY BABY DESIGNER </h1>
+
+            <span class="hint-star star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span>
+
+            <p class="information">
+              our project is to make baby nest and baby bed to new birth baby ,
+              by me (Chra) and my MOM (Shahla)
+            </p>
+          </div>
+
+          <div class="product-image">
+            <Image src="https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/6218869/c4937bab6eb043fdb639eba335a511e1/1.gif?token-time=2145916800&token-hash=DnwSjUji_kjuh0xq_jQ0yWf7Y94BaJdfJXL5lv3sQrA%3D" />
+            =
+            <div class="info">
+              <h2>The Description</h2>
+              <ul>
+                <li>
+                  <strong>since: </strong>2020
+                </li>
+                <li>
+                  <strong>Instagram page: </strong>MY_BABY_DESIGNER
+                </li>
+                <li>
+                  <strong>Facebook: </strong>my baby designer
+                </li>
+                <li>
+                  <strong>Location: </strong>Sulaymanaya
+                </li>
+                <li>
+                  <strong>Phone Number: </strong> 770 912 64 67
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="pages">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+          rel="stylesheet"
+        />
+
+        <div class="gallery">
+          <div class="gallery__column">
+            <figure class="gallery__thumb">
+              <img
+                src="./image/image.jpg"
+                width="300px"
+                height="300px"
+                alt="Portrait by Alex Perez"
+                class="gallery__image"
+              />
+            </figure>
+          </div>
+
+          <div class="gallery__column">
+            <figure class="gallery__thumb">
+              <img
+                src="./image/image.jpg"
+                width="300px"
+                height="500px"
+                alt="Portrait by Sam Burriss"
+                class="gallery__image"
+              />
+            </figure>
+          </div>
+
+          <div class="gallery__column">
+            <figure class="gallery__thumb">
+              <img
+                src="./image/image.jpg"
+                width="300px"
+                height="300px"
+                alt="Portrait by Ethan Haddox"
+                class="gallery__image"
+              />
+            </figure>
+
+            <figure class="gallery__thumb">
+              <img
+                src="./image/image.jpg"
+                width="300px"
+                height="300px"
+                alt="Portrait by Amir Geshani"
+                class="gallery__image"
+              />
+            </figure>
+          </div>
+
+          <div class="gallery__column">
+            <figure class="gallery__thumb">
+              <img
+                src="./image/image.jpg"
+                width="300px"
+                height="300px"
+                alt="Portrait by Jasmin Chew"
+                class="gallery__image"
+              />
+            </figure>
+
+            <figure class="gallery__thumb">
+              <img
+                src="./image/image.jpg"
+                width="300px"
+                height="500px"
+                alt="Portrait by Dima DallAcqua"
+                class="gallery__image"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+      <section className="sectionynawHome">
+        <h1>how to order ? ..</h1>
+        <hr></hr>
+        <div>
+          <p className="paraghrafy">
+            {" "}
+            <img src="./image/one.png" height="50px" />
+            first step
+          </p>
+          <p className="paraghrafy">
+            {" "}
+            <img src="./image/two.png" height="50px" />
+            second step
+          </p>
+          <p className="paraghrafy">
+            {" "}
+            <img src="./image/three.png" height="50px" />
+            third step
+          </p>
+          <p className="paraghrafy">
+            {" "}
+            <img src="./image/four.png" height="50px" />
+            fourth step
+          </p>
+        </div>
+        <hr></hr>
+      </section>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <hr />
+     
+      <hr />
+    </>
+  );
+}
