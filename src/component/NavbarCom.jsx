@@ -26,7 +26,8 @@ export default function NavbarCom() {
             <Link className="linkstyle" to="/">HOME</Link>
               <Link className="linkstyle" to="/Product">PRODUCT</Link>
               <Link className="linkstyle" to="/LoginCom">LOGIN</Link>
-              <Nav.Link href="#action1">REGISTER</Nav.Link>
+              <Link className="linkstyle" to="/Register">REGISTER</Link>
+              <Link className="linkstyle" to="/UserAccount">USERACOUNT</Link>
 
               <Nav.Link href="#action2"></Nav.Link>
             </Nav>

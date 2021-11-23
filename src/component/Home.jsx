@@ -1,6 +1,6 @@
 import React from "react";
-import { Image } from "react-bootstrap";
-import Card from "./Cardcom";
+import { Image ,Carousel } from "react-bootstrap";
+// import Card from "./Cardcom";
 
 import NavbarCom from "./NavbarCom";
 
@@ -29,7 +29,7 @@ export default function Home() {
 
           <div class="product-image">
             <Image src="https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/6218869/c4937bab6eb043fdb639eba335a511e1/1.gif?token-time=2145916800&token-hash=DnwSjUji_kjuh0xq_jQ0yWf7Y94BaJdfJXL5lv3sQrA%3D" />
-            =
+            
             <div class="info">
               <h2>The Description</h2>
               <ul>
@@ -76,10 +76,10 @@ export default function Home() {
           <div class="gallery__column">
             <figure class="gallery__thumb">
               <img
-                src="./image/image.jpg"
+                src="./image/work1.jpg"
                 width="300px"
-                height="500px"
-                alt="Portrait by Sam Burriss"
+                height="300px"
+               
                 class="gallery__image"
               />
             </figure>
@@ -88,7 +88,7 @@ export default function Home() {
           <div class="gallery__column">
             <figure class="gallery__thumb">
               <img
-                src="./image/image.jpg"
+                src="./image/wor2.jpg"
                 width="300px"
                 height="300px"
                 alt="Portrait by Ethan Haddox"
@@ -98,7 +98,7 @@ export default function Home() {
 
             <figure class="gallery__thumb">
               <img
-                src="./image/image.jpg"
+                src="./image/work3.jpg"
                 width="300px"
                 height="300px"
                 alt="Portrait by Amir Geshani"
@@ -110,7 +110,7 @@ export default function Home() {
           <div class="gallery__column">
             <figure class="gallery__thumb">
               <img
-                src="./image/image.jpg"
+                src="./image/work6.jpg"
                 width="300px"
                 height="300px"
                 alt="Portrait by Jasmin Chew"
@@ -120,9 +120,9 @@ export default function Home() {
 
             <figure class="gallery__thumb">
               <img
-                src="./image/image.jpg"
+                src="./image/work5.jpg"
                 width="300px"
-                height="500px"
+                height="300px"
                 alt="Portrait by Dima DallAcqua"
                 class="gallery__image"
               />
@@ -137,32 +137,30 @@ export default function Home() {
           <p className="paraghrafy">
             {" "}
             <img src="./image/one.png" height="50px" />
-            first step
+             first step : click on product page in navbar
           </p>
           <p className="paraghrafy">
             {" "}
             <img src="./image/two.png" height="50px" />
-            second step
+             second step :  click on show more detaile in the product you want
           </p>
           <p className="paraghrafy">
             {" "}
             <img src="./image/three.png" height="50px" />
-            third step
+             third step : click on buy button 
           </p>
           <p className="paraghrafy">
             {" "}
             <img src="./image/four.png" height="50px" />
-            fourth step
+             fourth step : in final step click on the (buy icon) 
           </p>
         </div>
         <hr></hr>
       </section>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+
+      <div id="app"></div>
       <hr />
-     
+
       <hr />
     </>
   );

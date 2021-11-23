@@ -15,7 +15,7 @@ export default function ShowProduct() {
         <div class="container py-4 my-4 mx-auto d-flex flex-column">
           <div className="basket">
             <Link to="/InBasket">
-              <img src="./image/shopping-basket.png" width="50px" />
+              <img src="./image/shopping-basket.png" width="30px" />
             </Link>
             {showName.length}
           </div>
