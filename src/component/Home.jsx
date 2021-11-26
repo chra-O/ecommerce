@@ -1,6 +1,7 @@
 import React from "react";
 import { Image ,Carousel } from "react-bootstrap";
 // import Card from "./Cardcom";
+import FooterCom from "./FooterCom";
 
 import NavbarCom from "./NavbarCom";
 
@@ -159,9 +160,7 @@ export default function Home() {
       </section>
 
       <div id="app"></div>
-      <hr />
-
-      <hr />
+      <FooterCom/>
     </>
   );
 }

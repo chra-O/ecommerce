@@ -178,16 +178,19 @@
 #divyCardakan {
   display: inline-flex;
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 55px;
   margin-bottom: 50px;
 }
 .cardstyle {
   border-radius: 10px;
 }
+.ulcode {
+  margin-left: 50px;
+}
 .sectionynawHome {
   margin-top: 100px;
-  width: 700px;
-  margin-left: 400px;
+  width: 800px;
+  margin-left: 450px;
 
   font-family: "Farsan", cursive;
   margin-bottom: 100px;
@@ -272,7 +275,7 @@ hr {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
-.container {
+.containerfooter {
   background: #fff !important;
   border: none;
   height: 700px;
@@ -505,8 +508,13 @@ a {
     margin: 0px 15px;
   }
 }
+.cartstyle {
+  display: inline;
+  margin-left: 1150px;
+}
 .basket {
-  margin-left: 1300px;
+  display: inline;
+  margin-left: 1050px;
 }
 .profile-card-5 {
   margin-top: 20px;
@@ -523,6 +531,7 @@ a {
   position: relative;
   top: -20px;
 }
+
 .profile-card-5 .card-img-block img {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
@@ -536,22 +545,19 @@ a {
   font-weight: 300;
 }
 /* ///////////////////////////// */
-.contabasket{
+.contabasket {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
   width: 100;
   margin-top: 50px;
-
 }
 
-#buy{
-   margin-top: 10px;
+#buy {
+  margin-top: 10px;
 }
 
-
-#howtobuy{
-  
+#howtobuy {
   display: inline;
   background: #ffe652;
   padding: 20px;
@@ -560,65 +566,59 @@ a {
   border-radius: 20px;
 }
 
+.responsive-table li {
+  border-radius: 3px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 800px;
+}
+.table-header {
+  background-color: #51ade2;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.col-1 {
+  flex-basis: 10%;
+}
+.col-2 {
+  flex-basis: 40%;
+}
+.col-3 {
+  flex-basis: 25%;
+}
+.col-4 {
+  flex-basis: 25%;
+}
 
-  .responsive-table li {
-    border-radius: 3px;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    width: 800px;
-  }
+@media all and (max-width: 767px) {
   .table-header {
-    background-color: #51ade2;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
+    display: none;
   }
   .table-row {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-   
   }
-  .col-1 {
-    flex-basis: 10%;
+  li {
+    display: block;
   }
-  .col-2 {
-    flex-basis: 40%;
+  .col {
+    flex-basis: 100%;
   }
-  .col-3 {
-    flex-basis: 25%;
+  .col {
+    display: flex;
+    padding: 10px 0;
   }
-  .col-4 {
-    flex-basis: 25%;
-  }
-  
-  @media all and (max-width: 767px) {
-    .table-header {
-      display: none;
-    }
-    .table-row{
-      
-    }
-    li {
-      display: block;
-    }
-    .col {
-      
-      flex-basis: 100%;
-      
-    }
-    .col {
-      display: flex;
-      padding: 10px 0; }
 
-      .col:before {
-        color: #6C7A89;
-        padding-right: 10px;
-        content: attr(data-label);
-        flex-basis: 50%;
-        text-align: right;
-      
-    }
+  .col:before {
+    color: #6c7a89;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
   }
- 
+}

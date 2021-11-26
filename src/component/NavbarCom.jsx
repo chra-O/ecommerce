@@ -9,13 +9,18 @@ import {
   FormControl,
   Navbar,
 } from "react-bootstrap";
+import { addToBasket } from "../service/appApi";
+import { useSelector } from "react-redux";
 
 export default function NavbarCom() {
+  const showName = useSelector((state) => state.baskit.value);
+
   return (
     <>
       <Navbar expand="lg" id="styleNavbar">
         <Container fluid>
           <Navbar.Brand >Hi , shop NOW</Navbar.Brand>
+        
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -28,13 +33,19 @@ export default function NavbarCom() {
               <Link className="linkstyle" to="/LoginCom">LOGIN</Link>
               <Link className="linkstyle" to="/Register">REGISTER</Link>
               <Link className="linkstyle" to="/UserAccount">USERACOUNT</Link>
+              {/* <Link className="linkstyle" to="/ErrorCom">Erorr</Link> */}
 
-              <Nav.Link href="#action2"></Nav.Link>
+              <Nav.Link href="#action2"> <div className="basket">
+              <Link to="/InBasket">
+              <img src="./image/shopping-trolley.png" width="35px" />
+               </Link>
+            {showName.length}
+          </div></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
-        
-        {/* <img src="./image/shopping-basket.jpg"/> */}
+      
+       
       </Navbar>
     </>
   );

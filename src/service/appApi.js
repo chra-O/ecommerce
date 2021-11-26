@@ -2,16 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   value: JSON.parse(localStorage.getItem("cart")) || [],
-  user: {
+  user: JSON.parse(localStorage.getItem("userInfo")) ||{
     username: " ",
     email: " ",
     password: "",
   },
 
-  userLogin: {
-    useremail: " ",
-    userpassword: "",
-  },
+ 
 };
 
 const appApi = createSlice({
@@ -26,22 +23,16 @@ const appApi = createSlice({
     },
     deleteToBasket: (state, action) => {
       state.value.splice(action.payload, 1);
-     localStorage.setItem("cart", JSON.stringify(state.value));
+      localStorage.setItem("cart", JSON.stringify(state.value));
     },
     login: (state, action) => {
+      
       state.user.username = action.payload.username;
       state.user.email = action.payload.email;
       state.user.password = action.payload.password;
+      localStorage.setItem("userInfo", JSON.stringify(state.user));
     },
-    userlogin:( state , action)=>{
-      state.userLogin.useremail = action.payload.email;
-      state.userLogin.userpassword = action.payload.password;
-      if(state.userLogin.useremail === state.user.email && state.userLogin.userpassword ===state.user.password  ) {
-                  
-        
-      }
-
-    },
+    
   },
 });
 

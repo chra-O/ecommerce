@@ -41,7 +41,7 @@ export default function InBasket() {
             </OverlayTrigger>
           </li>
 
-          {/* <div> {card.name} </div> */}
+         
 
           {showName.map((card, index) => {
             return (
@@ -58,7 +58,7 @@ export default function InBasket() {
                 <div class="col col-4" data-label="Payment Status">
                   <button
                     type="button"
-                    class="btn btn-outline-warning"
+                    class="btn btn-warning"
                     onClick={() => dispatch(deleteToBasket(index))}
                   >
                     {" "}

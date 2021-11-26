@@ -1,23 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { login } from "../service/appApi";
-import { useEffect } from "react";
+import FooterCom from "./FooterCom";
 import { useNavigate } from "react-router";
-
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import NavbarCom from "./NavbarCom";
 import { useSelector } from "react-redux";
+
 
 export default function LoginCom() {
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
-  const [value, setValue] = useState(0);
-
+ 
+  const showusername = useSelector((state) => state.baskit.user.username);
   const showpassword = useSelector((state) => state.baskit.user.password);
   const showemail = useSelector((state) => state.baskit.user.email);
+
   const dispatch = useDispatch();
   const handleEmail = (e) => {
     const userEmail = { ...user };
@@ -31,18 +32,16 @@ export default function LoginCom() {
   };
 
   let navigate = useNavigate();
-  useEffect(() => {
-    setTimeout(() => {
-      navigate("./UserAccount");
-    }, 3000);
-  });
-
   const acionFunction = () => {
     dispatch(login(user));
+    if(user.email === " " || user.password === "" ){
+      alert("you miss a fild")
+    }else{
     if (showemail === user.email && showpassword === user.password) {
       navigate("/UserAccount");
     } else {
-      alert(" your not register");
+     alert("pls regisetr first");
+    }
     }
   };
   return (
@@ -118,7 +117,7 @@ export default function LoginCom() {
                   <button
                     type="submit"
                     class="btn btn-blue text-center"
-                    onClick={(() => acionFunction() )}
+                    onClick={() => acionFunction()}
                   >
                     {" "}
                     login
@@ -147,8 +146,9 @@ export default function LoginCom() {
           </div>
         </div>
       </div>
+      {/* <FooterCom/> */}
     </div>
-
+  
     //  <Link className="linkstyle" to="/UserAccount">Login </Link>
   );
 }

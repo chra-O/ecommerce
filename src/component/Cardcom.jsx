@@ -15,10 +15,10 @@ export default function Cardcom(props) {
     		            <img class="card-img-top" src="./image/work3.jpg" alt="Card image cap" />
     		        </div>
                     <div class="card-body pt-0">
-                    <h5 class="card-title">Florence Garza</h5>
+                    <h5 class="card-title">{props.title}</h5>
                     <p class="card-text">
                       
-                      Some quick eontent.</p>
+                     {props.cost}</p>
                       <Button   className="buttonInTheCard"><Link className="linkstyle" to="/ShowProduct">show more details</Link></Button>
                   </div>
                 </div>

@@ -21,7 +21,7 @@ export default function UserAccount() {
             <div class="card p-6 py-4">
                 <div class="text-center"> <img src="./image/girl.png" width="100" class="rounded-circle" /> </div>
                 <div class="text-center mt-3"> 
-                    <h5 class="mt-2 mb-0"> username :{showusername}</h5> 
+                    {/* <h5 class="mt-2 mb-0"> username :{showusername}</h5>  */}
                     <h5 class="mt-2 mb-0"> email :{showemail}</h5> 
                     <div class="px-4 mt-1">
                         <p class="fonts">  </p>
