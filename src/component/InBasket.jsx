@@ -3,16 +3,26 @@ import NavbarCom from "./NavbarCom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { deleteToBasket } from "../service/appApi";
-import { Popover, OverlayTrigger } from "react-bootstrap";
+import { Popover, OverlayTrigger, Modal, Button } from "react-bootstrap";
 
 export default function InBasket() {
   const popover = (
-    <Popover id="popover-basic">
-      <Popover.Body>
-        bda ba <strong> 3aydy xoman bet </strong>
-      </Popover.Body>
-    </Popover>
+    <Modal.Dialog>
+      <Modal.Header closeButton>
+        <Modal.Title> thanks u.</Modal.Title>
+      </Modal.Header>
+
+      <Modal.Body>
+        <p>we will send you email check your mail box</p>
+      </Modal.Body>
+
+      <Modal.Footer>
+        <Button variant="secondary">Close</Button>
+        <Button variant="primary">bye</Button>
+      </Modal.Footer>
+    </Modal.Dialog>
   );
+
   const dispatch = useDispatch();
   const showName = useSelector((state) => state.baskit.value);
   return (
@@ -22,8 +32,10 @@ export default function InBasket() {
         to buy product click on this :{" "}
         <img src="./image/buy.png" width="30px" id="buy" />{" "}
       </p>
+
       <div class="contabasket">
         <h2></h2>
+
         <ul class="responsive-table">
           <li class="table-header">
             <div class="col col-1">Id</div>
@@ -40,8 +52,6 @@ export default function InBasket() {
               />
             </OverlayTrigger>
           </li>
-
-         
 
           {showName.map((card, index) => {
             return (

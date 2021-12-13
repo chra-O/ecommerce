@@ -42,6 +42,7 @@
 #howOrder {
   width: 100%;
   height: 500px;
+  margin-bottom: 250px;
 }
 
 .informationn {
@@ -247,6 +248,9 @@ hr {
 .gallery__column {
   display: flex;
   margin: 8px;
+  position: relative;
+  top: 0;
+  left: 0;
 
   overflow: hidden;
   flex-direction: column;
@@ -621,4 +625,19 @@ a {
     flex-basis: 50%;
     text-align: right;
   }
+}
+.gallery__thumb {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+
+  color: #f1f1f1;
+  margin-top: 0;
+  transition: 0.5s ease;
+  opacity: 1;
+  color: white;
+  font-size: 20px;
 }

@@ -14,6 +14,8 @@ export default function Product() {
             <Cardcom title="pinky " cost="75$"/>
             <Cardcom title="blue bed" cost="15$"/>
             <Cardcom title="baby bed " cost="60$"/>
+            <Cardcom title="baby bed " cost="60$"/>
+            <Cardcom title="baby bed " cost="60$"/>
             <FooterCom/>
           
         </div>

@@ -32,12 +32,13 @@ export default function NavbarCom() {
               <Link className="linkstyle" to="/Product">PRODUCT</Link>
               <Link className="linkstyle" to="/LoginCom">LOGIN</Link>
               <Link className="linkstyle" to="/Register">REGISTER</Link>
-              <Link className="linkstyle" to="/UserAccount">USERACOUNT</Link>
+              <Link className="linkstyle" to="/UserAccount"></Link>
               {/* <Link className="linkstyle" to="/ErrorCom">Erorr</Link> */}
 
-              <Nav.Link href="#action2"> <div className="basket">
+              <Nav.Link href="#action2"> 
+              <div className="basket">
               <Link to="/InBasket">
-              <img src="./image/shopping-trolley.png" width="35px" />
+              <img src="./image/shopping-trolley.png" width="30px" />
                </Link>
             {showName.length}
           </div></Nav.Link>

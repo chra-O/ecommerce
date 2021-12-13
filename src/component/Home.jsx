@@ -1,5 +1,5 @@
 import React from "react";
-import { Image ,Carousel } from "react-bootstrap";
+import { Image, Carousel } from "react-bootstrap";
 // import Card from "./Cardcom";
 import FooterCom from "./FooterCom";
 
@@ -30,7 +30,7 @@ export default function Home() {
 
           <div class="product-image">
             <Image src="https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/6218869/c4937bab6eb043fdb639eba335a511e1/1.gif?token-time=2145916800&token-hash=DnwSjUji_kjuh0xq_jQ0yWf7Y94BaJdfJXL5lv3sQrA%3D" />
-            
+
             <div class="info">
               <h2>The Description</h2>
               <ul>
@@ -60,6 +60,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
           rel="stylesheet"
         />
+       
 
         <div class="gallery">
           <div class="gallery__column">
@@ -80,9 +81,12 @@ export default function Home() {
                 src="./image/work1.jpg"
                 width="300px"
                 height="300px"
-               
                 class="gallery__image"
               />
+              <div class="overlay">
+                {" "}
+                <img src="./image/sale.png" width="100px" height="100px" />
+              </div>
             </figure>
           </div>
 
@@ -104,7 +108,10 @@ export default function Home() {
                 height="300px"
                 alt="Portrait by Amir Geshani"
                 class="gallery__image"
-              />
+              /> <div class="overlay">
+              {" "}
+              <img src="./image/sale.png" width="100px" height="100px" />
+            </div>
             </figure>
           </div>
 
@@ -117,6 +124,10 @@ export default function Home() {
                 alt="Portrait by Jasmin Chew"
                 class="gallery__image"
               />
+               <div class="overlay">
+                {" "}
+                <img src="./image/sale.png" width="100px" height="100px" />
+              </div>
             </figure>
 
             <figure class="gallery__thumb">
@@ -128,6 +139,19 @@ export default function Home() {
                 class="gallery__image"
               />
             </figure>
+            <figure class="gallery__thumb">
+              <img
+                src="./image/work5.jpg"
+                width="300px"
+                height="300px"
+                alt="Portrait by Dima DallAcqua"
+                class="gallery__image"
+              />
+               <div class="overlay">
+                {" "}
+                <img src="./image/sale.png" width="100px" height="100px" />
+              </div>
+            </figure>
           </div>
         </div>
       </div>
@@ -138,29 +162,29 @@ export default function Home() {
           <p className="paraghrafy">
             {" "}
             <img src="./image/one.png" height="50px" />
-             first step : click on product page in navbar
+            first step : click on product page in navbar
           </p>
           <p className="paraghrafy">
             {" "}
             <img src="./image/two.png" height="50px" />
-             second step :  click on show more detaile in the product you want
+            second step : click on show more detaile in the product you want
           </p>
           <p className="paraghrafy">
             {" "}
             <img src="./image/three.png" height="50px" />
-             third step : click on buy button 
+            third step : click on buy button
           </p>
           <p className="paraghrafy">
             {" "}
             <img src="./image/four.png" height="50px" />
-             fourth step : in final step click on the (buy icon) 
+            fourth step : in final step click on the (buy icon)
           </p>
         </div>
         <hr></hr>
       </section>
 
       <div id="app"></div>
-      <FooterCom/>
+      <FooterCom />
     </>
   );
 }
