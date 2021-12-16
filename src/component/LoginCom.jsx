@@ -48,21 +48,21 @@ export default function LoginCom() {
     <div>
       <NavbarCom />
 
-      <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+      <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto" id="whatF">
         <div class="card card0 border-0">
           <div class="row d-flex">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="card1 pb-5">
                 <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
                   {" "}
                   <img
-                    src="https://i.pinimg.com/originals/2e/ee/9a/2eee9a834d84c976636e8a3f8ba8fddf.gif"
+                    src="https://c.tenor.com/n2Pnf0j5PlIAAAAC/mail-download.gif"
                     class="image"
                   />{" "}
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8">
               <div class="card2 card border-0 px-4 py-5">
                 <div class="row mb-4 px-3">
                   <h6 class="mb-0 mr-4 mt-2">Sign in with</h6>
@@ -94,7 +94,7 @@ export default function LoginCom() {
                     onChange={(e) => handleEmail(e)}
                   />{" "}
                 </div>
-                <div class="row px-3">
+                {/* <div class="row px-3">
                   {" "}
                   <label class="mb-1">
                     <h6 class="mb-0 text-sm">Password</h6>
@@ -105,12 +105,12 @@ export default function LoginCom() {
                     placeholder="Enter password"
                     onChange={(e) => handlePassword(e)}
                   />{" "}
-                </div>
+                </div> */}
                 <div class="row px-3 mb-4">
                   <div class="custom-control custom-checkbox custom-control-inline"></div>{" "}
-                  <a href="#" class="ml-auto mb-0 text-sm">
+                  {/* <a href="#" class="ml-auto mb-0 text-sm">
                     Forgot Password?
-                  </a>
+                  </a> */}
                 </div>
                 <div class="row mb-3 px-3">
                   {" "}
@@ -123,7 +123,7 @@ export default function LoginCom() {
                     login
                   </button>{" "}
                 </div>
-                <div class="row mb-4 px-3">
+                {/* <div class="row mb-4 px-3">
                   {" "}
                   <small class="font-weight-bold">
                     Don't have an account?{" "}
@@ -131,7 +131,7 @@ export default function LoginCom() {
                       REGISTER
                     </Link>
                   </small>{" "}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

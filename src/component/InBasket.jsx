@@ -3,25 +3,12 @@ import NavbarCom from "./NavbarCom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { deleteToBasket } from "../service/appApi";
+import { Link } from "react-router-dom";
+import LOginCom from "./LoginCom"
 import { Popover, OverlayTrigger, Modal, Button } from "react-bootstrap";
 
 export default function InBasket() {
-  const popover = (
-    <Modal.Dialog>
-      <Modal.Header closeButton>
-        <Modal.Title> thanks u.</Modal.Title>
-      </Modal.Header>
 
-      <Modal.Body>
-        <p>we will send you email check your mail box</p>
-      </Modal.Body>
-
-      <Modal.Footer>
-        <Button variant="secondary">Close</Button>
-        <Button variant="primary">bye</Button>
-      </Modal.Footer>
-    </Modal.Dialog>
-  );
 
   const dispatch = useDispatch();
   const showName = useSelector((state) => state.baskit.value);
@@ -42,8 +29,9 @@ export default function InBasket() {
             <div class="col col-2">product</div>
             <div class="col col-3">cost</div>
             <div class="col col-4"> delete order</div>
-
-            <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+            <Link className="linkstyle" to="/LoginCom">
+            <OverlayTrigger trigger="click" placement="right">
+             
               <img
                 src="./image/buy.png"
                 width="100px"
@@ -51,6 +39,8 @@ export default function InBasket() {
                 id="stylebuybuttonynawbasket"
               />
             </OverlayTrigger>
+                    </Link>
+           
           </li>
 
           {showName.map((card, index) => {

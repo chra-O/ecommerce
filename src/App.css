@@ -206,6 +206,9 @@ hr {
   padding: 30px;
   margin-left: 100px;
 }
+#whatF {
+  margin-top: 150px;
+}
 
 .paraghrafy:nth-child(even) {
   border-left: 2px dashed;
