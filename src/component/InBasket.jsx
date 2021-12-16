@@ -63,7 +63,7 @@ export default function InBasket() {
                   {card.name}
                 </div>
                 <div class="col col-3" data-label="Amount">
-                  $350
+                  {card.price}
                 </div>
                 <div class="col col-4" data-label="Payment Status">
                   <button

@@ -5,7 +5,7 @@ export default function what(props) {
     <div id="divyCardakan">
       <div
         class="col-md-8 mt-8"
-        style={{ width: "20rem", height: "20rem", marginLeft: "20px" }}
+        style={{ width: "18rem", height: "20rem", marginLeft: "60px" }}
       >
         <div class="card profile-card-5">
           <div class="card-img-block">

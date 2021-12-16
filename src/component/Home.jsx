@@ -55,10 +55,47 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <What title=" baby nest babay " cost="30$" image="./image/work6.jpg" />
-      <What title="nest bed " cost="25$" image="./image/work6.jpg" />
-      <What title="gray nest bed " cost="38$" image="./image/work6.jpg" />
-      <What title="pinky " cost="75$" image="./image/work6.jpg" />
+      <div id="demanddiv">
+        <p id="demand"> The Most Demnad : </p>
+        <div id="whatdev">
+          <What
+            title=" baby nest babay "
+            cost="30$"
+            image="./image/work6.jpg"
+          />
+          <What title="nest bed " cost="25$" image="./image/work7.jpg" />
+          <What title="gray nest bed " cost="38$" image="./image/se.jpg" />
+          <What title="pinky " cost="75$" image="./image/work3.jpg" />
+        </div>
+      </div>
+      <section className="sectionynawHome">
+        <h1>how to order ? ..</h1>
+        <hr></hr>
+        <div>
+          <p className="paraghrafy">
+            {" "}
+            {/* <img src="./image/one.png" height="50px" /> */}
+            first step : click on product page in navbar
+          </p>
+          <p className="paraghrafy">
+            {" "}
+            {/* <img src="./image/two.png" height="50px" /> */}
+            second step : click on show more detaile in the product you want
+          </p>
+          <p className="paraghrafy">
+            {" "}
+            {/* <img src="./image/three.png" height="50px" /> */}
+            third step : click on buy button
+          </p>
+          <p className="paraghrafy">
+            {" "}
+            {/* <img src="./image/four.png" height="50px" /> */}
+            fourth step : in final step click on the (buy icon)
+          </p>
+        </div>
+        <hr></hr>
+      </section>
+
       <div id="pages">
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
@@ -69,7 +106,20 @@ export default function Home() {
           <div class="gallery__column">
             <figure class="gallery__thumb">
               <img
-                src="./image/image.jpg"
+                src="./image/work1.jpg"
+                width="300px"
+                height="300px"
+                alt="Portrait by Jasmin Chew"
+                class="gallery__image"
+              />
+              <div class="overlay">
+                {" "}
+                <img src="./image/sale.png" width="100px" height="100px" />
+              </div>
+            </figure>
+            <figure class="gallery__thumb">
+              <img
+                src="./image/yanza.jpg"
                 width="300px"
                 height="300px"
                 alt="Portrait by Alex Perez"
@@ -81,7 +131,20 @@ export default function Home() {
           <div class="gallery__column">
             <figure class="gallery__thumb">
               <img
-                src="./image/work1.jpg"
+                src="./image/work6.jpg"
+                width="300px"
+                height="300px"
+                alt="Portrait by Jasmin Chew"
+                class="gallery__image"
+              />
+              <div class="overlay">
+                {" "}
+                <img src="./image/sale.png" width="100px" height="100px" />
+              </div>
+            </figure>
+            <figure class="gallery__thumb">
+              <img
+                src="./image/penj.jpg"
                 width="300px"
                 height="300px"
                 class="gallery__image"
@@ -147,34 +210,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="sectionynawHome">
-        <h1>how to order ? ..</h1>
-        <hr></hr>
-        <div>
-          <p className="paraghrafy">
-            {" "}
-            <img src="./image/one.png" height="50px" />
-            first step : click on product page in navbar
-          </p>
-          <p className="paraghrafy">
-            {" "}
-            <img src="./image/two.png" height="50px" />
-            second step : click on show more detaile in the product you want
-          </p>
-          <p className="paraghrafy">
-            {" "}
-            <img src="./image/three.png" height="50px" />
-            third step : click on buy button
-          </p>
-          <p className="paraghrafy">
-            {" "}
-            <img src="./image/four.png" height="50px" />
-            fourth step : in final step click on the (buy icon)
-          </p>
-        </div>
-        <hr></hr>
-      </section>
-
+     
       <div id="app"></div>
 
       <FooterCom />

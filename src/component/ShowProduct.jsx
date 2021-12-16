@@ -19,7 +19,14 @@ export default function ShowProduct() {
   if (error) {
     return <div> ....error.. ..</div>;
   }
-  console.log(data.name);
+  // console.log(data.name);
+  // const cartProducts = [];
+  // function getCart() {
+  //   showName.forEach((prod) => {
+  //     return cartProducts.push(prod._id);
+  //   });
+  // }
+  // getCart();
 
   return (
     <>
@@ -40,7 +47,7 @@ export default function ShowProduct() {
                   <button type="button" class="btn btn-warning">
                     <a
                       onClick={() =>
-                        dispatch(addToBasket({ name: "baby bed", cost: " .$" }))
+                        dispatch(addToBasket(data))
                       }
                     >
                       BUY NOW
