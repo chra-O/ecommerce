@@ -1,17 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
-/* When you create a slice, import it here */
-// import countReducer from '../features/TestCounterSlice.js'
-import { setupListeners } from '@reduxjs/toolkit/query'
-import appApi from "../service/appApi";
 
+// import { setupListeners } from "@reduxjs/toolkit/query";
+import appApi from "../service/appApi";
+import { ecommerceApi } from "../cart/api";
 
 export const store = configureStore({
   reducer: {
-    baskit:appApi
-       
-  
-  },
-  
-});
+    baskit: appApi,
 
-setupListeners(store.dispatch)
+    api: ecommerceApi.reducer,
+  },
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(ecommerceApi.middleware);
+  },
+});
+// 
+// setupListeners(store.dispatch);

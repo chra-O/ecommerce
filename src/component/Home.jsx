@@ -1,7 +1,8 @@
 import React from "react";
 import { Image, Carousel } from "react-bootstrap";
-// import Card from "./Cardcom";
+import Card from "./Cardcom";
 import FooterCom from "./FooterCom";
+import What from "./what";
 
 import NavbarCom from "./NavbarCom";
 
@@ -54,13 +55,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      <What title=" baby nest babay " cost="30$" image="./image/work6.jpg" />
+      <What title="nest bed " cost="25$" image="./image/work6.jpg" />
+      <What title="gray nest bed " cost="38$" image="./image/work6.jpg" />
+      <What title="pinky " cost="75$" image="./image/work6.jpg" />
       <div id="pages">
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
           rel="stylesheet"
         />
-       
 
         <div class="gallery">
           <div class="gallery__column">
@@ -108,10 +111,11 @@ export default function Home() {
                 height="300px"
                 alt="Portrait by Amir Geshani"
                 class="gallery__image"
-              /> <div class="overlay">
-              {" "}
-              <img src="./image/sale.png" width="100px" height="100px" />
-            </div>
+              />{" "}
+              <div class="overlay">
+                {" "}
+                <img src="./image/sale.png" width="100px" height="100px" />
+              </div>
             </figure>
           </div>
 
@@ -124,7 +128,7 @@ export default function Home() {
                 alt="Portrait by Jasmin Chew"
                 class="gallery__image"
               />
-               <div class="overlay">
+              <div class="overlay">
                 {" "}
                 <img src="./image/sale.png" width="100px" height="100px" />
               </div>
@@ -139,22 +143,10 @@ export default function Home() {
                 class="gallery__image"
               />
             </figure>
-            <figure class="gallery__thumb">
-              <img
-                src="./image/work5.jpg"
-                width="300px"
-                height="300px"
-                alt="Portrait by Dima DallAcqua"
-                class="gallery__image"
-              />
-               <div class="overlay">
-                {" "}
-                <img src="./image/sale.png" width="100px" height="100px" />
-              </div>
-            </figure>
           </div>
         </div>
       </div>
+
       <section className="sectionynawHome">
         <h1>how to order ? ..</h1>
         <hr></hr>
@@ -184,6 +176,7 @@ export default function Home() {
       </section>
 
       <div id="app"></div>
+
       <FooterCom />
     </>
   );

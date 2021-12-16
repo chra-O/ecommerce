@@ -134,7 +134,7 @@
   animation-duration: 4s;
   animation-fill-mode: forwards;
 
-  animation-delay: 2s;
+  animation-delay: 4s;
 
   color: black;
   height: 100%;
@@ -641,3 +641,4 @@ a {
   color: white;
   font-size: 20px;
 }
+/* //////////////// */
