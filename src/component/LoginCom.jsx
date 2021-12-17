@@ -25,24 +25,12 @@ export default function LoginCom() {
     userEmail.email = e.target.value;
     setUser(userEmail);
   };
-  const handlePassword = (e) => {
-    const userpassword = { ...user };
-    userpassword.password = e.target.value;
-    setUser(userpassword);
-  };
+  
 
   let navigate = useNavigate();
   const acionFunction = () => {
+    navigate("/UserAccount");
     dispatch(login(user));
-    if(user.email === " " || user.password === "" ){
-      alert("you miss a fild")
-    }else{
-    if (showemail === user.email && showpassword === user.password) {
-      navigate("/UserAccount");
-    } else {
-     alert("pls regisetr first");
-    }
-    }
   };
   return (
     <div>

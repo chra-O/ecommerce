@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
       <div id="demanddiv">
-        <p id="demand"> The Most Demnad : </p>
+        <p id="demand"> The Most Demand : </p>
         <div id="whatdev">
           <What
             title=" baby nest babay "
