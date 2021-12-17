@@ -5,9 +5,13 @@ export const ecommerceApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:5000/",
   }),
+
   endpoints: (builder) => ({
     getProducts: builder.query({
       query: () => `/products`,
+    }),
+    postemail:builder.query({
+      query: () => `/send`,
     }),
 
     getProductById: builder.query({
@@ -16,5 +20,5 @@ export const ecommerceApi = createApi({
   }),
 });
 
-export const { useGetProductsQuery, useLoginMutation, useGetProductByIdQuery } =
+export const { useGetProductsQuery, usePostemailQuery, useGetProductByIdQuery } =
   ecommerceApi;

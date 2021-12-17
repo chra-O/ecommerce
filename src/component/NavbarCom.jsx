@@ -30,7 +30,7 @@ export default function NavbarCom() {
             > 
             <Link className="linkstyle" to="/">HOME</Link>
               <Link className="linkstyle" to="/Product">PRODUCT</Link>
-              <Link className="linkstyle" to="/LoginCom">LOGIN</Link>
+              {/* <Link className="linkstyle" to="/LoginCom">LOGIN</Link> */}
               <Link className="linkstyle" to="/Register">ABOUT</Link>
               <Link className="linkstyle" to="/UserAccount"></Link>
               {/* <Link className="linkstyle" to="/ErrorCom">Erorr</Link> */}

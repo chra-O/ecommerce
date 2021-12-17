@@ -7,14 +7,15 @@ import { useDispatch } from "react-redux";
 import { useState } from "react";
 import NavbarCom from "./NavbarCom";
 import { useSelector } from "react-redux";
-
+import { usePostemailQuery } from "../cart/api";
+import axios from "axios";
 
 export default function LoginCom() {
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
- 
+  // const { data, isError, isLoading } = usePostemailQuery();
   const showusername = useSelector((state) => state.baskit.user.username);
   const showpassword = useSelector((state) => state.baskit.user.password);
   const showemail = useSelector((state) => state.baskit.user.email);
@@ -25,18 +26,23 @@ export default function LoginCom() {
     userEmail.email = e.target.value;
     setUser(userEmail);
   };
-  
 
   let navigate = useNavigate();
   const acionFunction = () => {
     navigate("/UserAccount");
     dispatch(login(user));
+    try {
+      axios.post("http://localhost:5000/send");
+    } catch (error) {}
   };
   return (
     <div>
       <NavbarCom />
 
-      <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto" id="whatF">
+      <div
+        class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto"
+        id="whatF"
+      >
         <div class="card card0 border-0">
           <div class="row d-flex">
             <div class="col-lg-4">
@@ -136,7 +142,7 @@ export default function LoginCom() {
       </div>
       {/* <FooterCom/> */}
     </div>
-  
+
     //  <Link className="linkstyle" to="/UserAccount">Login </Link>
   );
 }

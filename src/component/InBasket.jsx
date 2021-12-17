@@ -4,12 +4,10 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { deleteToBasket } from "../service/appApi";
 import { Link } from "react-router-dom";
-import LOginCom from "./LoginCom"
+import LOginCom from "./LoginCom";
 import { Popover, OverlayTrigger, Modal, Button } from "react-bootstrap";
 
 export default function InBasket() {
-
-
   const dispatch = useDispatch();
   const showName = useSelector((state) => state.baskit.value);
   return (
@@ -30,17 +28,15 @@ export default function InBasket() {
             <div class="col col-3">cost</div>
             <div class="col col-4"> delete order</div>
             <Link className="linkstyle" to="/LoginCom">
-            <OverlayTrigger trigger="click" placement="right">
-             
-              <img
-                src="./image/buy.png"
-                width="100px"
-                id="buy"
-                id="stylebuybuttonynawbasket"
-              />
-            </OverlayTrigger>
-                    </Link>
-           
+              <OverlayTrigger trigger="click" placement="right">
+                <img
+                  src="./image/buy.png"
+                  width="100px"
+                  id="buy"
+                  id="stylebuybuttonynawbasket"
+                />
+              </OverlayTrigger>
+            </Link>
           </li>
 
           {showName.map((card, index) => {
@@ -53,7 +49,7 @@ export default function InBasket() {
                   {card.name}
                 </div>
                 <div class="col col-3" data-label="Amount">
-                  {card.price}
+                  {card.price}$
                 </div>
                 <div class="col col-4" data-label="Payment Status">
                   <button
