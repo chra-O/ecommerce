@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </div>
       <section className="sectionynawHome">
-        <h1>how to order ? ..</h1>
+        <h1>How to order ? ..</h1>
         <hr></hr>
         <div>
           <p className="paraghrafy">

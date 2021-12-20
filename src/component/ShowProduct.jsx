@@ -50,7 +50,7 @@ export default function ShowProduct() {
                         dispatch(addToBasket(data))
                       }
                     >
-                      BUY NOW
+                    ADD 
                     </a>
                   </button>
                 </div>
